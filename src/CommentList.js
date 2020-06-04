@@ -1,7 +1,9 @@
-import React, {useState, useEffect } from 'react';
-import axios from 'axios';
+// import React, {useState, useEffect } from 'react';
+import React from 'react';
+// import axios from 'axios';
 
-export default ({ postId }) => {
+export default ({ comments }) => {
+  {/* now we passing comments here, don't need to catch comments from posts 
   const [comments, setComments] = useState([]);
 
   const fetchData = async () => {
@@ -13,7 +15,7 @@ export default ({ postId }) => {
   useEffect(() => {
     fetchData();
   }, []);
-
+  */}
   const renderedCommnets = comments.map(comment => {
     return <li key={comment.id}>{comment.content}</li>;
   });
